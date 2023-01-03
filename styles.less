@@ -1,0 +1,46 @@
+@font-face {
+    font-family: bebas-neue;
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.huruf-elegan {
+    font-family: bebas-neue, Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 1px black;
+    font-size: 28px;
+}
+
+.header {
+    display: flex;
+    background-color: #cdebf3;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: fit-content;
+    .header-logo {
+        margin-left: 5%;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 50px;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        li {
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .header-rightside {
+        display: flex;
+        margin-right: 5%;
+    }
+}
