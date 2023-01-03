@@ -22,6 +22,7 @@ body {
     box-sizing: border-box;
     justify-content: space-between;
     height: fit-content;
+    padding-bottom: 100px;
     .header-logo {
         margin-left: 5%;
     }
@@ -42,5 +43,40 @@ body {
     .header-rightside {
         display: flex;
         margin-right: 5%;
+    }
+}
+
+.hero {
+    display: flex;
+    background-image: linear-gradient(to bottom, #cdebf3, #4cb6d3);
+    padding-bottom: 100px;
+    flex: auto;
+    .biodata {
+        text-align: center;
+        display: flex;
+        margin-left: 10px;
+        flex-direction: column;
+        margin-right: auto;
+        width: 45%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        h1 {
+            margin-bottom: 0;
+        }
+        p {
+            text-align: start;
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+    .foto {
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
+        img {
+            width: inherit;
+            height: fit-content;
+            border: 5px solid blue;
+            border-radius: 10px;
+        }
     }
 }
