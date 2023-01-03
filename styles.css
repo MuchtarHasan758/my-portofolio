@@ -2,6 +2,10 @@
   font-family: bebas-neue;
   src: url(fonts/BebasNeue-Regular.ttf);
 }
+@font-face {
+  font-family: lemon-milk;
+  src: url(fonts/LEMONMILK-Regular.otf);
+}
 body {
   margin: 0;
   box-sizing: border-box;
@@ -21,6 +25,12 @@ body {
   height: fit-content;
   padding-bottom: 100px;
 }
+.header .hamburger-icon {
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  display: none;
+}
 .header .header-logo {
   margin-left: 5%;
 }
@@ -36,9 +46,44 @@ body {
   text-decoration: none;
   color: black;
 }
+.header ul li a :hover {
+  color: white;
+  text-shadow: 0 0 4px black;
+}
 .header .header-rightside {
   display: flex;
   margin-right: 5%;
+}
+.mobileNav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #cdebf3;
+  overflow-x: hidden;
+  transition: 0.3s ease-in;
+  padding-top: 60px;
+  display: none;
+}
+.mobileNav .closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  margin-left: 50px;
+}
+.mobileNav .closeBtn a {
+  pointer-events: none;
+}
+.mobileNav a {
+  padding: 8px 8px 8px 40px;
+  display: block;
+  text-decoration: none;
+  color: #222222;
+  transition: 0.3s;
+}
+.mobileNav a :hover {
+  color: white;
+  text-shadow: 0 0 4px black;
 }
 .hero {
   display: flex;
@@ -71,6 +116,125 @@ body {
 .hero .foto img {
   width: inherit;
   height: fit-content;
-  border: 5px solid blue;
+  border: 5px solid navy;
   border-radius: 10px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+.main .list-skill {
+  width: 80%;
+  margin: 100px auto 0;
+}
+.main .list-skill h1 {
+  text-align: center;
+  padding: 25px;
+}
+.main .list-skill li {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main .list-skill li a {
+  text-decoration: none;
+}
+.main .list-experiences {
+  width: 80%;
+  margin: auto;
+}
+.main .list-experiences h1 {
+  text-align: center;
+  padding: 25px;
+}
+.main .list-experiences li {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #22d3ff;
+  border: 8px solid papayawhip;
+  border-radius: 10px;
+  width: 60%;
+  padding: 20px;
+  margin: 100px auto 100px;
+  height: fit-content;
+}
+.contact p {
+  text-align: center;
+  font-size: 16px;
+  font-family: lemon-milk, Arial, Helvetica, sans-serif;
+}
+.contact .social {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+.contact .social #linkedin {
+  padding-top: 10px;
+}
+.footer {
+  display: flex;
+  background-color: #cdebf3;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+}
+.footer footer {
+  font-size: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .header {
+    padding-bottom: 50px;
+  }
+  .header .hamburger-icon {
+    display: flex;
+    padding: 20px;
+  }
+  .header .header-rightside {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
+  .hero {
+    height: auto;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .hero .foto {
+    margin: auto;
+    display: block;
+    width: 256px;
+    height: fit-content;
+  }
+  .hero .biodata {
+    margin: auto;
+    width: 80%;
+  }
+  .main {
+    gap: 20px;
+  }
+  .main .list-skill {
+    margin-top: 20px;
+  }
+  .contact {
+    margin: 50px auto;
+  }
+  .contact img {
+    width: 50px;
+    height: 50px;
+  }
+  .contact p {
+    font-size: 12px;
+  }
+  .footer {
+    height: 50px;
+  }
+  .footer footer {
+    font-size: 12px;
+  }
 }

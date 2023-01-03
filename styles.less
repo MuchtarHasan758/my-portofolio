@@ -3,6 +3,11 @@
     src: url(./fonts/BebasNeue-Regular.ttf);
 }
 
+@font-face {
+    font-family: lemon-milk;
+    src: url(./fonts/LEMONMILK-Regular.otf);
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -23,6 +28,12 @@ body {
     justify-content: space-between;
     height: fit-content;
     padding-bottom: 100px;
+    .hamburger-icon {
+        font-size: 30px;
+        font-weight: 700;
+        cursor: pointer;
+        display: none;
+    }
     .header-logo {
         margin-left: 5%;
     }
@@ -37,12 +48,48 @@ body {
             a {
                 text-decoration: none;
                 color: black;
+                :hover {
+                    color: white;
+                    text-shadow: 0 0 4px black;
+                }
             }
         }
     }
     .header-rightside {
         display: flex;
         margin-right: 5%;
+    }
+}
+
+.mobileNav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #cdebf3;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+    .closeBtn {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        margin-left: 50px;
+        a {
+            pointer-events: none;
+        }
+    }
+    a {
+        padding: 8px 8px 8px 40px;
+        display: block;
+        text-decoration: none;
+        color: #222222;
+        transition: 0.3s;
+        :hover {
+            color: white;
+            text-shadow: 0 0 4px black;
+        }
     }
 }
 
@@ -75,8 +122,131 @@ body {
         img {
             width: inherit;
             height: fit-content;
-            border: 5px solid blue;
+            border: 5px solid navy;
             border-radius: 10px;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    .list-skill {
+        width: 80%;
+        margin: 100px auto 0;
+        h1 {
+            text-align: center;
+            padding: 25px;
+        }
+        li {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .list-experiences {
+        width: 80%;
+        margin: auto;
+        h1 {
+            text-align: center;
+            padding: 25px;
+        }
+        li {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(34, 211, 255);
+    border: 8px solid papayawhip;
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    margin: 100px auto 100px;
+    height: fit-content;
+    p {
+        text-align: center;
+        font-size: 16px;
+        font-family: lemon-milk, Arial, Helvetica, sans-serif;
+    }
+    .social {
+        display: flex;
+        margin: auto;
+        gap: 20px;
+        #linkedin {
+            padding-top: 10px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    background-color: #cdebf3;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    footer {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .header {
+        padding-bottom: 50px;
+        .hamburger-icon {
+            display: flex;
+            padding: 20px;
+        }
+        .header-rightside {
+            display: none;
+        }
+    }
+    .mobileNav {
+        display: block;
+    }
+    .hero {
+        height: auto;
+        flex-direction: column-reverse;
+        width: 100%;
+        .foto {
+            margin: auto;
+            display: block;
+            width: 256px;
+            height: fit-content;
+        }
+        .biodata {
+            margin: auto;
+            width: 80%;
+        }
+    }
+    .main {
+        gap: 20px;
+        .list-skill {
+            margin-top: 20px;
+        }
+    }
+    .contact {
+        margin: 50px auto;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    .footer {
+        height: 50px;
+        footer {
+            font-size: 12px;
         }
     }
 }

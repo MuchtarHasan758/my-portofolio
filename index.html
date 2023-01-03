@@ -11,17 +11,24 @@
     <nav>
     <div class="header">
         <div class="header-logo">
-            <h1>Header logo</h1>
+            <h1>Welcome :)</h1>
         </div>
+        <span class="hamburger-icon" onclick="openNav()">&#9776</span>
         <div class="header-rightside">
             <ul>
-                <li><a href="#"><span class="huruf-elegan">Heading-1</span></a></li>
-                <li><a href="#"><span class="huruf-elegan">Heading-1</span></a></li>
-                <li><a href="#"><span class="huruf-elegan">Heading-1</span></a></li>
+                <li><a href="#section-1"><span class="huruf-elegan">My Skills</span></a></li>
+                <li><a href="#section-2"><span class="huruf-elegan">Contact Me</span></a></li>
+                <li><a href="https://github.com/MuchtarHasan758" target="_blank"><span class="huruf-elegan">My Project on Github</span></a></li>
             </ul>
         </div>
     </div>
     </nav>
+    <div class="mobileNav" id="mobilenav">
+        <a class="closeBtn" onclick="closeNav()"><span class="huruf-elegan">&#10006</span></a>
+        <a href="#section-1"><span class="huruf-elegan">SKills Saya</span></a>
+        <a href="#section-2"><span class="huruf-elegan">Kontak Saya</span></a>
+        <a href="https://github.com/MuchtarHasan758" target="_blank"><span class="huruf-elegan">My Project on Github</span></a>
+    </div>
     <div class="hero">
         <div class="biodata">
             <h1>MUCHTAR HASAN</h1>
@@ -33,5 +40,43 @@
             <img src="./gambar/foto-muchtar.jpg" alt="foto Muchtar Hasan">
         </div>
     </div>
+    <div class="main" id="section-1">
+        <div class="list-skill">
+            <h1><span>Skills dan Sertifikat</span></h1>
+            <ul>
+                <li>Soft Skills: Penyelesaian Masalah, Berpikir kritis, Intregritas dan loyalitas</li>
+                <li>Hard Skills: Microsoft Excel dan Word, HTML5, CSS, Vanilla JavaScript, Windows OS, Android OS, Xubuntu(berbasis ubuntu), Nobara(berbasis Fedora), Github, Bahasa Inggris pasif.</li>
+                <li>Sertifikat: Menggunakan perangkat lunak pengolah angka untuk menyusun dan menyajikan laporan sebagai staff operator Komputer (Bauran) <a href="https://dash-kartuprakerja.babastudio.com/certificate-user-new?u=YnQzS09OeTI2bU8wNUFYTDR2UkZkdz09&c=NVJZTTdFaTl1Y29JeU1nejJ2OU1lUT09" target="_blank">Disini</a></li>
+                <li>Sertifikat: Kursus Mengoperasikan Komputer dan Ms Word untuk Juru Ketik Kantor <a href="https://sert.arkd.me/pdf/61110142dfbbb/154915" target="_blank">Disini</a></li>
+            </ul>
+        </div>
+        <div class="list-experiences">
+            <h1><span>Pengalaman Kerja</span></h1>
+            <h3>Freelance (Juni 2020 - September 2021)</h3>
+            <ul>
+                <li>Jasa meng-root android</li>
+                <li>Jasa memperbaiki android yang lupa pola dan Soft-bootloop</li>
+                <li>Jasa memasang router</li>
+                <li>Jasa instalasi OS</li>
+            </ul>
+            <h3>Kurir di Los Daging Pasar Gaplok Jakarta Pusat (September 2021 - Mai 2022)</h3>
+            <ul>
+                <li>Mengirim lalu menimbang daging sapi ke masing-masing pasar pelanggan dan mencatatnya di nota</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact" id="section-2">
+        <p>Dibawah ini adalah sarana untuk menghubungi saya, Apabila ada saran tentang Website ini mohon kontak saya, Sekian dan Terimakasih</p>
+        <div class="social">
+        <div id="github"><a href="https://github.com/MuchtarHasan758" target="_blank"><img src="./gambar/github-mark-white.png" alt="github log"></a></div>
+        <div id="linkedin"><a href="https://www.linkedin.com/in/muchtar-hasan/" target="_blank"><img src="./gambar/linked-in-resize.png" alt="linkedin logo"></a></div>
+        <div id="email"><a href="https://t.me/Mchtr_Hsn" target="_blank"><img src="./gambar/telegram.png" alt="telegram logo"></a></div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>Site dibuat oleh Muchtar Hasan pada 03-01-2023.</footer>
+        <footer>Sumber icon dari google, Saya menggunakan hanya untuk keperluan belajar.</footer>
+    </div>
 </body>
+<script src="./script.js"></script>
 </html>
